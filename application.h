@@ -1,0 +1,16 @@
+#pragma once
+
+#include "graphics/graphics.h"
+
+class Application : public Graphics::GraphicsApplication {
+public:
+
+  Application(std::string name, int width, int height);
+
+  void render() override;
+
+
+private:
+
+
+};
