@@ -14,6 +14,12 @@ add_executable(sdl-wrapper
   graphics/graphics.h
   graphics/graphics-application.h
   graphics/graphics-application.cpp
+  graphics/shape.h
+  graphics/shape.cpp
+  graphics/circle.h
+  graphics/circle.cpp
+  graphics/vec2.h
+  graphics/vec2.cpp
 )
 
 target_link_libraries(sdl-wrapper PRIVATE SDL3::SDL3)

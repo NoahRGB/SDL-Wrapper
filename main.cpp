@@ -3,7 +3,7 @@
 #include "application.h"
 
 int main() {
-
+  
   Application app("Learning", 500, 500);
   app.run();
 
