@@ -2,6 +2,8 @@
 
 #include "application.h"
 
+// cmake --build build --target run
+
 int main() {
   
   Application app("Learning", 500, 500);

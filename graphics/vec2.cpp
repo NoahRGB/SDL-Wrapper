@@ -22,8 +22,8 @@ Graphics::Vec2 Graphics::Vec2::normalised() const {
   return Vec2(x / len, y / len);
 }
 
-float Graphics::dot(const Graphics::Vec2& a, const Graphics::Vec2& b) {
-  return 0.0f;
+float Graphics::dot(const Graphics::Vec2& v1, const Graphics::Vec2& v2) {
+  return v1.x * v2.x + v1.y * v2.y;
 }
  
 Graphics::Vec2 Graphics::cross(const Graphics::Vec2& v1, const Graphics::Vec2& v2) {

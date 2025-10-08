@@ -8,9 +8,10 @@ public:
 
   Application(std::string name, int width, int height);
 
+  void setup() override;
   void render() override;
 
 private:
-  Graphics::Circle circle;
+  // Graphics::Circle circle;
 
 };

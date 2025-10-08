@@ -14,6 +14,7 @@ namespace Graphics {
     void run();
 
     // functionality to be overridden by a child class
+    virtual void setup() = 0;
     virtual void render() = 0;
     // virtual void update() = 0;
 

@@ -11,14 +11,19 @@ Graphics::GraphicsApplication::GraphicsApplication(std::string name, int width, 
 }
 
 Graphics::GraphicsApplication::~GraphicsApplication() {
-  SDL_DestroyWindow(window);
   SDL_DestroyRenderer(renderer);
+  SDL_DestroyWindow(window);
   SDL_Quit();
 }
 
 void Graphics::GraphicsApplication::run() {
 
+  int fps = 0;
+  Uint64 lastTime = 0;
+
   while (!done) {
+
+    Uint64 currentTime = SDL_GetTicks();
 
     SDL_Event e;
     while (SDL_PollEvent(&e)) {
@@ -27,7 +32,15 @@ void Graphics::GraphicsApplication::run() {
         done = true;
       }
     }
-
     render();
+    SDL_RenderPresent(renderer);
+
+    fps++;
+    if (currentTime > lastTime + 1000) {
+      lastTime = currentTime;
+      SDL_SetWindowTitle(window, std::string("FPS " + std::to_string(fps)).c_str());
+      fps = 0;
+    }
+
   }
 }
