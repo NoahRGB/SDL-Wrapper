@@ -20,12 +20,12 @@ namespace Graphics {
 
 
   private:
-    int width, height;
     bool done;
 
   protected: // only accessible by children classes
     SDL_Window* window;
     SDL_Renderer* renderer;
+    int width, height;
   };
 
 }

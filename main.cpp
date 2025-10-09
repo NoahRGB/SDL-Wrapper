@@ -6,7 +6,7 @@
 
 int main() {
   
-  Application app("Learning", 500, 500);
+  Application app("Learning", 1000, 1000);
   app.run();
 
   return 0;

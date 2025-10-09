@@ -1,20 +1,11 @@
 #pragma once
 
-#include "shape.h"
+#include "vec2.h"
+#include "colour.h"
+#include "SDL3/SDL.h"
 
 namespace Graphics {
 
-  class Circle : public Shape {
-  public:
-    Circle();
-    Circle(Vec2 pos, int radius, Colour::Colour colour);
-
-    void draw(SDL_Renderer* renderer) override;
-
-  private:
-    int radius;
-
-  };
-
+  void drawCircle(SDL_Renderer* renderer, Vec2 pos, int radius, Colour::Colour colour);
 }
 

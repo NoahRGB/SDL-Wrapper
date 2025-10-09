@@ -12,6 +12,5 @@ public:
   void render() override;
 
 private:
-  // Graphics::Circle circle;
 
 };

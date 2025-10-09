@@ -19,8 +19,6 @@ add_executable(sdl-wrapper
   graphics/graphics.cpp
   graphics/graphics-application.h
   graphics/graphics-application.cpp
-  graphics/shape.h
-  graphics/shape.cpp
   graphics/circle.h
   graphics/circle.cpp
   graphics/vec2.h

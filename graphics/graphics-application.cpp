@@ -21,6 +21,8 @@ void Graphics::GraphicsApplication::run() {
   int fps = 0;
   Uint64 lastTime = 0;
 
+  setup();
+
   while (!done) {
 
     Uint64 currentTime = SDL_GetTicks();
